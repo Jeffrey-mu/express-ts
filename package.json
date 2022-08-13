@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only ./src/app.ts",
     "build": "unbuild",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky install"
   },
   "author": "Jeffrey",
   "license": "ISC",
@@ -19,7 +20,9 @@
     "dotenv": "^10.0.0",
     "esbuild": "^0.15.2",
     "express": "^4.17.1",
+    "husky": "^8.0.1",
     "jsonwebtoken": "^8.5.1",
+    "lint-staged": "^13.0.3",
     "lodash": "^4.17.21",
     "mysql2": "^2.3.3",
     "nanoid": "^3.1.30",
