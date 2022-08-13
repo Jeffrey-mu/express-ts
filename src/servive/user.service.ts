@@ -1,4 +1,4 @@
-import UserModel from "../model/users.model";
+import UserModel from '../model/users.model'
 
 /**
  * 验证密码
@@ -7,12 +7,11 @@ import UserModel from "../model/users.model";
 export async function getUser({ password }) {
   const passwordInfo = await UserModel.findOne({
     where: {
-      password
-    }
-  });
+      password,
+    },
+  })
   if (!passwordInfo) {
-    return Promise.reject(new Error(`User ${password} not found`));
+    return Promise.reject(new Error(`User ${password} not found`))
   }
   return passwordInfo
 }
-

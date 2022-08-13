@@ -9,8 +9,7 @@ export async function getHandler(req: Request, res: Response) {
 
     const user = await getUser({ password })
     res.send(new SuccessResult(user))
-  }
-  catch (e) {
+  } catch (e) {
     res.status(406).send(new ErrorResult(e.message))
     logger.error(e.message)
   }

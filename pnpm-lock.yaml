@@ -27,6 +27,7 @@ specifiers:
   nanoid: ^3.1.30
   pino: ^7.0.2
   pino-pretty: ^7.1.0
+  prettier: ^2.7.1
   prom-client: ^14.0.0
   response-time: ^2.3.2
   rollup: ^2.77.3
@@ -36,7 +37,6 @@ specifiers:
   ts-node-dev: ^1.1.8
   typescript: ^4.4.4
   unbuild: ^0.8.8
-  vite: ^3.0.7
   zod: ^3.9.8
 
 dependencies:
@@ -53,6 +53,7 @@ dependencies:
   nanoid: registry.npmjs.org/nanoid/3.3.4
   pino: registry.npmjs.org/pino/7.11.0
   pino-pretty: registry.npmjs.org/pino-pretty/7.6.1
+  prettier: registry.npmjs.org/prettier/2.7.1
   prom-client: registry.npmjs.org/prom-client/14.0.1
   response-time: registry.npmjs.org/response-time/2.3.2
   rollup: registry.npmjs.org/rollup/2.77.3
@@ -60,7 +61,6 @@ dependencies:
   swagger-jsdoc: registry.npmjs.org/swagger-jsdoc/6.2.5
   swagger-ui-express: registry.npmjs.org/swagger-ui-express/4.5.0_express@4.18.1
   unbuild: registry.npmjs.org/unbuild/0.8.8
-  vite: registry.npmjs.org/vite/3.0.7
   zod: registry.npmjs.org/zod/3.18.0
 
 devDependencies:
@@ -3113,15 +3113,12 @@ packages:
       pathe: registry.npmjs.org/pathe/0.3.4
     dev: false
 
-  registry.npmjs.org/postcss/8.4.16:
-    resolution: {integrity: sha512-ipHE1XBvKzm5xI7hiHCZJCSugxvsdq2mPnsq5+UF+VHCjiBvtDrlxJfMBToWaP9D5XlgNmcFGqoHmUn0EYEaRQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/postcss/-/postcss-8.4.16.tgz}
-    name: postcss
-    version: 8.4.16
-    engines: {node: ^10 || ^12 || >=14}
-    dependencies:
-      nanoid: registry.npmjs.org/nanoid/3.3.4
-      picocolors: registry.npmjs.org/picocolors/1.0.0
-      source-map-js: registry.npmjs.org/source-map-js/1.0.2
+  registry.npmjs.org/prettier/2.7.1:
+    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/prettier/-/prettier-2.7.1.tgz}
+    name: prettier
+    version: 2.7.1
+    engines: {node: '>=10.13.0'}
+    hasBin: true
     dev: false
 
   registry.npmjs.org/pretty-bytes/6.0.0:
@@ -3561,13 +3558,6 @@ packages:
     dependencies:
       atomic-sleep: registry.npmjs.org/atomic-sleep/1.0.0
 
-  registry.npmjs.org/source-map-js/1.0.2:
-    resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/source-map-js/-/source-map-js-1.0.2.tgz}
-    name: source-map-js
-    version: 1.0.2
-    engines: {node: '>=0.10.0'}
-    dev: false
-
   registry.npmjs.org/source-map-support/0.5.21:
     resolution: {integrity: sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/source-map-support/-/source-map-support-0.5.21.tgz}
     name: source-map-support
@@ -3990,35 +3980,6 @@ packages:
     name: vary
     version: 1.1.2
     engines: {node: '>= 0.8'}
-    dev: false
-
-  registry.npmjs.org/vite/3.0.7:
-    resolution: {integrity: sha512-dILhvKba1mbP1wCezVQx/qhEK7/+jVn9ciadEcyKMMhZpsuAi/eWZfJRMkmYlkSFG7Qq9NvJbgFq4XOBxugJsA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/vite/-/vite-3.0.7.tgz}
-    name: vite
-    version: 3.0.7
-    engines: {node: ^14.18.0 || >=16.0.0}
-    hasBin: true
-    peerDependencies:
-      less: '*'
-      sass: '*'
-      stylus: '*'
-      terser: ^5.4.0
-    peerDependenciesMeta:
-      less:
-        optional: true
-      sass:
-        optional: true
-      stylus:
-        optional: true
-      terser:
-        optional: true
-    dependencies:
-      esbuild: registry.npmjs.org/esbuild/0.14.54
-      postcss: registry.npmjs.org/postcss/8.4.16
-      resolve: registry.npmjs.org/resolve/1.22.1
-      rollup: registry.npmjs.org/rollup/2.77.3
-    optionalDependencies:
-      fsevents: registry.npmjs.org/fsevents/2.3.2
     dev: false
 
   registry.npmjs.org/webidl-conversions/3.0.1:
