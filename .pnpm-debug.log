@@ -1,0 +1,22 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 error pnpm": {
+    "code": "ELIFECYCLE",
+    "errno": "ENOENT",
+    "syscall": "spawn",
+    "file": "sh",
+    "pkgid": "my-website-ts-admin@1.0.0",
+    "stage": "dev",
+    "script": "ts-node-dev --respawn --transpile-only ./src/app.ts",
+    "pkgname": "my-website-ts-admin",
+    "err": {
+      "name": "pnpm",
+      "message": "my-website-ts-admin@1.0.0 dev: `ts-node-dev --respawn --transpile-only ./src/app.ts`\nspawn ENOENT",
+      "code": "ELIFECYCLE",
+      "stack": "pnpm: my-website-ts-admin@1.0.0 dev: `ts-node-dev --respawn --transpile-only ./src/app.ts`\nspawn ENOENT\n    at ChildProcess.<anonymous> (/opt/homebrew/lib/node_modules/pnpm/dist/pnpm.cjs:92290:22)\n    at ChildProcess.emit (node:events:527:28)\n    at maybeClose (node:internal/child_process:1092:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5)"
+    }
+  },
+  "2 warn pnpm:global": " Local package.json exists, but node_modules missing, did you mean to install?"
+}
